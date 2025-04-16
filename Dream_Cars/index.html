@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Cars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Dream Cars</h1>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white text-2xl">☰</button>
+
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="./index.html" class="hover:underline">Home</a></li>
+                <li><a href="./cars.html" class="hover:underline">Cars</a></li>
+                <li><a href="./about.html" class="hover:underline">About</a></li>
+                <li><a href="./contact.html" class="hover:underline">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Search Bar -->
+    <header class="hero flex flex-col items-center justify-center text-white text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Find Your Dream Car</h2>
+        <p class="text-lg md:text-xl mb-6">Luxury, Speed, and Comfort – All in One Place</p>
+
+        
+    </header>
+
+    <!-- Featured Cars -->
+    <section class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-6">Featured Cars</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="aspect-square overflow-hidden">
+                  <img src="./assets/bmw m5.jpg" alt="BMW M5" class="object-cover w-full h-full">
+                </div>
+                <div class="p-4">
+                  <h3 class="text-xl font-bold">BMW M5</h3>
+                  <p class="text-gray-600">₹1.19 Crore</p>
+                  <a href="bmw m5.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="aspect-square overflow-hidden">
+                  <img src="./assets/Lamborgini Urus.jpg" alt="Lamborghini Urus" class="object-cover w-full h-full">
+                </div>
+                <div class="p-4">
+                  <h3 class="text-xl font-bold">Lamborghini Urus</h3>
+                  <p class="text-gray-600">₹3.15 Crore</p>
+                  <a href="lamborghini-urus.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="aspect-square overflow-hidden">
+                  <img src="./assets/fortuner.png" alt="Fortuner" class="object-cover w-full h-full">
+                </div>
+                <div class="p-4">
+                  <h3 class="text-xl font-bold">Fortuner</h3>
+                  <p class="text-gray-600">₹35.94 Lakh</p>
+                  <a href="fortuner.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="aspect-square overflow-hidden">
+                  <img src="./assets/mahendra thar.jpg" alt="Mahindra Thar" class="object-cover w-full h-full">
+                </div>
+                <div class="p-4">
+                  <h3 class="text-xl font-bold">Mahindra Thar</h3>
+                  <p class="text-gray-600">₹11.50 Lakh</p>
+                  <a href="mahendra thar.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="aspect-square overflow-hidden">
+                  <img src=".//assets/Ferrari 812 Superfast.jpg" alt="Ferrari 812" class="object-cover w-full h-full">
+                </div>
+                <div class="p-4">
+                  <h3 class="text-xl font-bold">Ferrari 812</h3>
+                  <p class="text-gray-600">₹5.75 Crore</p>
+                  <a href="ferrari-812.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="aspect-square overflow-hidden">
+                  <img src="./assets/Porsche 911.jpg" alt="Porsche 911" class="object-cover w-full h-full">
+                </div>
+                <div class="p-4">
+                  <h3 class="text-xl font-bold">Porsche 911</h3>
+                  <p class="text-gray-600">₹1.86 Crore</p>
+                  <a href="porsche-911.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>&copy; 2025 Dream Cars. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

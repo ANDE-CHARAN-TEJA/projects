@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cars - Dream Cars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./home.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Dream Cars</h1>
+      <button id="menu-toggle" class="md:hidden text-white text-2xl">☰</button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="./index.html" class="hover:underline">Home</a></li>
+        <li><a href="./cars.html" class="hover:underline">Cars</a></li>
+        <li><a href="./about.html" class="hover:underline">About</a></li>
+        <li><a href="./contact.html" class="hover:underline">Contact</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Script to toggle mobile menu -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Cars Grid -->
+  <main class="flex-grow container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Collection</h2>
+    <div class="grid md:grid-cols-3 gap-8 px-6">
+
+      <!-- Car Cards -->
+      <!-- 1. BMW M5 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/bmw m5.jpg" alt="BMW M5" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">BMW M5</h3>
+          <p class="text-gray-600">₹1.19 Crore</p>
+          <a href="bmw m5.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 2. Mahindra Thar -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/mahendra thar.jpg" alt="Mahindra Thar" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Mahindra Thar</h3>
+          <p class="text-gray-600">₹11.50 Lakh</p>
+          <a href="mahendra thar.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 3. Mercedes -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/mereceds.jpg" alt="Mercedes" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Mercedes</h3>
+          <p class="text-gray-600">₹1.12 Crore</p>
+          <a href="mercedes.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 4. Audi -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/audi white.jpg" alt="Audi" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Audi</h3>
+          <p class="text-gray-600">₹99.8 Lakh</p>
+          <a href="audi.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 5. Fortuner -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/fortuner.png" alt="Fortuner" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Fortuner</h3>
+          <p class="text-gray-600">₹35.94 Lakh</p>
+          <a href="fortuner.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 6. Toyota Supra -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/Toyota Supra.jpg" alt="Toyota Supra" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Toyota Supra</h3>
+          <p class="text-gray-600">₹95 Lakh</p>
+          <a href="toyota-supra.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 7. Lamborghini Urus -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/Lamborgini Urus.jpg" alt="Lamborghini Urus" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Lamborghini Urus</h3>
+          <p class="text-gray-600">₹3.15 Crore</p>
+          <a href="lamborghini-urus.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 8. Range Rover -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/Range Rover.jpg" alt="Range Rover" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Range Rover</h3>
+          <p class="text-gray-600">₹2.39 Crore</p>
+          <a href="range-rover.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 9. Porsche 911 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/Porsche 911.jpg" alt="Porsche 911" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Porsche 911</h3>
+          <p class="text-gray-600">₹1.86 Crore</p>
+          <a href="porsche-911.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 10. Rolls Royce -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/Rolls Royce.jpg" alt="Rolls Royce" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Rolls Royce</h3>
+          <p class="text-gray-600">₹6.22 Crore</p>
+          <a href="rolls-royce.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 11. Jaguar F-Type -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="./assets/Jaguar F-Type.jpg" alt="Jaguar F-Type" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Jaguar F-Type</h3>
+          <p class="text-gray-600">₹1.00 Crore</p>
+          <a href="jaguar-f-type.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+      <!-- 12. Ferrari 812 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src=".//assets/Ferrari 812 Superfast.jpg" alt="Ferrari 812" class="object-cover w-full h-full">
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Ferrari 812</h3>
+          <p class="text-gray-600">₹5.75 Crore</p>
+          <a href="ferrari-812.html" class="block mt-4 bg-blue-500 text-white py-2 text-center rounded">View Details</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4 mt-8">
+    <p>&copy; 2025 Dream Cars. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
